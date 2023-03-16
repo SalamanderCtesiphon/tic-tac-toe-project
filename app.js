@@ -10,3 +10,9 @@ let user = {
 console.log(user.fullName);
 
 
+console.log(moment().startOf('day').fromNow());
+
+const today = moment().startOf('day').fromNow();
+
+const todayDate = document.querySelector('#todayDate');
+todayDate.innerHTML = today;
