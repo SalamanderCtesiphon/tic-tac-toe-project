@@ -1,12 +1,12 @@
-const personFactory = (name, age) => {
-  const sayHello = () => console.log('hello!');
-  return { name, age, sayHello};
+let user = {
+  name : "John",
+  surname: "Smith",
+
+  get fullName() {
+    return `${this.name} ${this.surname}`;
+  }
 };
 
-const jeff = personFactory('jeff', 27);
-
-console.log(jeff.name);
-
-jeff.sayHello();
+console.log(user.fullName);
 
 
