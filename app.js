@@ -1,6 +1,6 @@
 const personFactory = (name, age) => {
   const sayHello = () => console.log('hello!');
-  retun { name, age, sayHello};
+  return { name, age, sayHello};
 };
 
 const jeff = personFactory('jeff', 27);
